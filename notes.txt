@@ -20,4 +20,16 @@ EFr6ldv3QXKBzGaRaWoQaVsTld-MTzhzOAtNALkHAb!QyJ3WLE9l6bQTOdgYb28iIOVyM01SOicc1hXC
 
 Try to find an oracle, try messing with the cypher text to see how the program responds.
 
-b64d = lambda x: base64.decodestring(x.replace('~', '=').replace('!', '/').replace('-', '+'))
+got flag 1 by removing ~~ from the encrypted string, got this from the error msg:
+
+Traceback (most recent call last):
+  File "./main.py", line 69, in index
+    post = json.loads(decryptLink(postCt).decode('utf8'))
+  File "./common.py", line 46, in decryptLink
+    data = b64d(data)
+  File "./common.py", line 11, in <lambda>
+    b64d = lambda x: base64.decodestring(x.replace('~', '=').replace('!', '/').replace('-', '+'))
+  File "/usr/local/lib/python2.7/base64.py", line 328, in decodestring
+    return binascii.a2b_base64(s)
+Error: Incorrect padding
+
