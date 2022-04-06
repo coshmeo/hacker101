@@ -33,3 +33,33 @@ Traceback (most recent call last):
     return binascii.a2b_base64(s)
 Error: Incorrect padding
 
+actual base64:
+EFr6ldv3QXKBzGaRaWoQaVsTld+MTzhzOAtNALkHAb/QyJ3WLE9l6bQTOdgYb28iIOVyM01SOicc1hXCqsorHleldDIZpp3wqt9lp/cO74dOrdSzhubHpBFq1KDCzHxZ/xZcnudIuc/YnTdvohipgnlrAFMKJuxQIGhNwsQRYd5CG6/MS9fNwt6CYmECEZpHefdbhzBWd/9BsfwLvOnZlQ==
+
+decoded & sent to hex:
+
+10 5a fa 95 db f7 41 72 81 cc 66 91 69 6a 10 69 
+5b 13 95 df 8c 4f 38 73 38 0b 4d 00 b9 07 01 bf 
+d0 c8 9d d6 2c 4f 65 e9 b4 13 39 d8 18 6f 6f 22 
+20 e5 72 33 4d 52 3a 27 1c d6 15 c2 aa ca 2b 1e 
+57 a5 74 32 19 a6 9d f0 aa df 65 a7 f7 0e ef 87 
+4e ad d4 b3 86 e6 c7 a4 11 6a d4 a0 c2 cc 7c 59 
+ff 16 5c 9e e7 48 b9 cf d8 9d 37 6f a2 18 a9 82 
+79 6b 00 53 0a 26 ec 50 20 68 4d c2 c4 11 61 de 
+42 1b af cc 4b d7 cd c2 de 82 62 61 02 11 9a 47 
+79 f7 5b 87 30 56 77 ff 41 b1 fc 0b bc e9 d9 95
+
+this was a blank submission, let's try the one with a's & b's
+
+ZLcYk4+RBHkq0pj0yIsTb+VrrUjRIo4ghxJXZ0UWDHgP7NL+bcTI+DVQ4u2iXksSu/7nX05+wqk7s8dOftVBx9v6Ac+Dun9KoYA4q0qR02MUuLd2MxvVVnLmPnUi0/lAUHi8+yb99GSgVxwceJZyvjlmCm/fyYbmbxNH4ccD5pM1d5SEl7P+KQmscE5MLuCSX/9jjchCaZaaODEqxy6rEw==
+
+64 b7 18 93 8f 91 04 79 2a d2 98 f4 c8 8b 13 6f 
+e5 6b ad 48 d1 22 8e 20 87 12 57 67 45 16 0c 78 
+0f ec d2 fe 6d c4 c8 f8 35 50 e2 ed a2 5e 4b 12 
+bb fe e7 5f 4e 7e c2 a9 3b b3 c7 4e 7e d5 41 c7 
+db fa 01 cf 83 ba 7f 4a a1 80 38 ab 4a 91 d3 63 
+14 b8 b7 76 33 1b d5 56 72 e6 3e 75 22 d3 f9 40 
+50 78 bc fb 26 fd f4 64 a0 57 1c 1c 78 96 72 be 
+39 66 0a 6f df c9 86 e6 6f 13 47 e1 c7 03 e6 93 
+35 77 94 84 97 b3 fe 29 09 ac 70 4e 4c 2e e0 92 
+5f ff 63 8d c8 42 69 96 9a 38 31 2a c7 2e ab 13
