@@ -1,0 +1,23 @@
+Hacker101 CTF
+
+Level 3
+Traceback (most recent call last):
+  File "./main.py", line 145, in do_login
+    if cur.execute('SELECT password FROM admins WHERE username=\'%s\'' % request.form['username'].replace('%', '%%')) == 0:
+  File "/usr/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 255, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''''' at line 1")
+
+
+level 4
+Aaaa in title & bbbb in body
+ZLcYk4-RBHkq0pj0yIsTb-VrrUjRIo4ghxJXZ0UWDHgP7NL-bcTI-DVQ4u2iXksSu!7nX05-wqk7s8dOftVBx9v6Ac-Dun9KoYA4q0qR02MUuLd2MxvVVnLmPnUi0!lAUHi8-yb99GSgVxwceJZyvjlmCm!fyYbmbxNH4ccD5pM1d5SEl7P-KQmscE5MLuCSX!9jjchCaZaaODEqxy6rEw~~
+
+blank
+EFr6ldv3QXKBzGaRaWoQaVsTld-MTzhzOAtNALkHAb!QyJ3WLE9l6bQTOdgYb28iIOVyM01SOicc1hXCqsorHleldDIZpp3wqt9lp!cO74dOrdSzhubHpBFq1KDCzHxZ!xZcnudIuc!YnTdvohipgnlrAFMKJuxQIGhNwsQRYd5CG6!MS9fNwt6CYmECEZpHefdbhzBWd!9BsfwLvOnZlQ~~
+
+Try to find an oracle, try messing with the cypher text to see how the program responds.
+
+b64d = lambda x: base64.decodestring(x.replace('~', '=').replace('!', '/').replace('-', '+'))
